@@ -24,5 +24,6 @@ mongoose
 app.use(express.json());
 app.use(router);
 
-// Export the app for Vercel
-module.exports = app;
+// Define a port for Render
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server running on port ${port}`));

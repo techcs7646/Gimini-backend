@@ -10,7 +10,7 @@ const app = express();
 // Use CORS
 app.use(
   cors({
-    origin: "http://localhost:5173", // Change this to your frontend's deployed URL after deployment
+    origin: "https://gimini-frontend.vercel.app/", // Change this to your frontend's deployed URL after deployment
     credentials: true,
   })
 );
